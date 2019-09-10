@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}用户注册{% endblock %}
+
+{% block extra_css %}
+<link href="/static/css/user.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="text_intro">
+	<h1>{% trans "注册关闭" %}</h1><!--Sign Up Closed-->
+	<p>{% trans "抱歉，平台注册已关闭" %}</p><!--We are sorry, but the sign up is currently closed.-->
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+﻿//.submenu ul li{position:relative;}
+//.submenu ul li ul{position:absolute;left:0px;z-index:3;height:20px;padding:5px 0 0 0;white-space:nowrap;display:none;}/*li行样式*/
+//.submenu ul li ul li{display:inline;text-align:left;}/*li行样式*/
+//.submenu ul li ul li a{}
+//.submenu ul li.hover{} /*鼠标经过时一级li样式*/
+//.submenu ul li.hover a.menu{}
+//.submenu ul li.hover ul{display:block;}
+
+

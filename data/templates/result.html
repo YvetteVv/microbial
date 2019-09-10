@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}查询结果{% endblock %}
+
+{% block extra_css %}
+<link href="/static/css/search.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block current2 %}menu_current{% endblock %}
+
+{% block content %}
+    <div class="searchText_box">
+        <form action="">
+            <select class="select_box">
+                <option value="" selected="selected">所有数据</option>
+                <option value="">基因组</option>
+                <option value="">基因</option>
+                <option value="">蛋白质</option>
+                <option value="">代谢产物</option>
+            </select>
+            <input class="searchText" size="15/" maxlength="50" placeholder=" 搜索生物信息平台 " onkeyup="if (event.keyCode == 13) { document.getElementById("searchBut").click(); id="searchkw" name="title" type="text" />
+            <input value=" 搜  索 " id="searchBut" class="searchBut" onclick="search_kw()" type="submit" />
+   
+
+            <a href="/data/searchdetail"id="searchBut" class="searchBut" type="submit">
+     高级
+       </a>
+   
+        </form>
+        <script type="text/javascript">
+            function search_kw() {
+                var search_url = "#"; //这里改为上个步骤新建的子栏目页面的地址;
+                var searchkw = document.getElementById("searchkw");
+                if (search_url.indexOf("?") < 0) {
+                    search_url += "?";
+                } else {
+                    search_url += "&";
+                }
+                search_url += "kw=" + encodeURIComponent(searchkw.value);
+                location.href = search_url;
+            }
+        </script>
+        
+    
+    
+    </div>
+    <h2>搜索结果</h2>
+    <div>
+        <style>
+            table, td
+            {
+            border:2px solid grey; 
+            width:100% 
+            }
+            th
+            {
+            border:2px solid grey; 
+            background-color:white;
+            color:black
+            }
+        </style>
+        <table >
+        <thead>
+            <tr>
+                <th> 基因名称 </th>
+                <th> 种群</th>
+                <th> 是否公开  </th>
+                <th>发布日期  </th>
+                <th> 是否完整 </th>
+                <th>基因编号 </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

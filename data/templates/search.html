@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}数据查询{% endblock %}
+
+{% block extra_css %}
+<link href="/static/css/search.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block current2 %}menu_current{% endblock %}
+
+{% block content %}
+
+    <div class="search_result">
+    <div style="float:left;width:50%;">
+    
+    
+    <div class="search_result">
+    <div style="float:left;width:35%;">
+        <h4>添加基因组</h4>
+        <div>
+        <input size="6.5"/>
+        <button>搜索</button>
+    </div>
+        
+       
+        <textarea rows="5" cols="10">
+        </textarea>
+        </br>
+        </br>
+        </br>
+        </br>
+    </div>
+    <div style="float:left;width:13%;">
+        </br>
+        </br>
+        </br>
+        <button>></button>
+        </br>
+        </br>
+        <button>x</button>
+    </div>
+    <div style="float:left;width:35%;">
+        <h4>已选基因组</h4>
+       
+        </br>
+
+        <textarea rows="6" cols="10">
+        </textarea>
+        
+        <div style="text-align:right; padding:0px; margin:0px;">
+        <button>清除全部</button>
+        <button>显示信息</button>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    <div style="float:left;width:50%;">
+    
+    <div class="searchText_box">
+        <form action="">
+            <select class="select_box">
+                <option value="" selected="selected">所有数据</option>
+                <option value="">基因组</option>
+                <option value="">基因</option>
+                <option value="">蛋白质</option>
+                <option value="">代谢产物</option>
+            </select>
+            <input class="searchText" size="8/" maxlength="18" placeholder=" 搜索生物信息平台 " onkeyup="if (event.keyCode == 13) { document.getElementById("searchBut").click(); id="searchkw" name="title" type="text" />
+            <!--input value=" 搜  索 " id="searchBut" class="searchBut" onclick="search_kw()" type="submit"  /-->
+   
+      
+        <a href="/data/result"id="searchBut" class="searchBut" type="submit">
+    搜索
+        </a>
+
+            <a href="/data/searchdetail"id="searchBut" class="searchBut" type="submit">
+     高级
+       </a>
+  
+        </form>
+        <script type="text/javascript">
+            function search_kw() {
+                var search_url = "#"; //这里改为上个步骤新建的子栏目页面的地址;
+                var searchkw = document.getElementById("searchkw");
+                if (search_url.indexOf("?") < 0) {
+                    search_url += "?";
+                } else {
+                    search_url += "&";
+                }
+                search_url += "kw=" + encodeURIComponent(searchkw.value);
+                location.href = search_url;
+            }
+        </script>
+    </div>
+    
+    </div>
+    <br>
+  
+    <label for="name">多条件检索</label>
+<div class="checkbox">
+   <label><input type="checkbox" value="">蛋白质</label>
+    <label><input type="checkbox" value="">基因组</label>
+     <label class="checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox1" value="option1"> 基因
+   </label>
+   <label class="checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox2" value="option2"> 基因组
+   </label>
+   <label class="checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox3" value="option3"> 蛋白质
+   </label>
+</div>
+
+<div class="radio">
+   
+   <label class="checkbox-inline">
+      <input type="radio" name="optionsRadiosinline" id="optionsRadios3"
+         value="option2" checked> 细菌
+   </label>
+   <label class="checkbox-inline">
+      <input type="radio" name="optionsRadiosinline" id="optionsRadios4"
+         value="option3"> 病毒
+   </label>
+    <label class="checkbox-inline">
+      <input type="radio" name="optionsRadiosinline" id="optionsRadios1"
+         value="option3" checked> 代谢产物
+   </label>
+</div>
+
+    </div>
+    <!--
+    <h2>搜索结果</h2>
+    <div class="search_result"><!-- search_result:begin -->
+    <!--
+        <div class="tabs">
+            <input checked id="tab_menu" name="tabs" type="radio">
+            <label for="tab_menu">基因组</label>
+
+            <input id="tab_menu2" name="tabs" type="radio">
+            <label for="tab_menu2">基因</label>
+
+            <input id="tab_menu3" name="tabs" type="radio">
+            <label for="tab_menu3">蛋白质</label>
+
+            <input id="tab_menu4" name="tabs" type="radio">
+            <label for="tab_menu4">代谢产物</label>
+
+            <div class="tab_contents">
+                <div class="tab_content">
+                </div>
+                <div class="tab_content">
+                </div>
+                <div class="tab_content">
+                </div>
+                <div class="tab_content">
+                </div>
+            </div>
+        </div>
+    </div><!-- search_result:end -->
+
+{% endblock %}

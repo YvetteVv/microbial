@@ -1,0 +1,100 @@
+.data_analyze {
+    min-height: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 15px;
+}
+
+.data_analyze h2 {
+    text-align: left;
+    margin: 10px;
+}
+
+.data_analyze .tab_box_filter {
+	width:950px;
+	margin:25px auto;
+}
+
+.data_analyze .tab_box_filter input {
+    display:inline-block;
+	width:948px;
+	height:30px;
+    border: 1px solid #7995cc;
+}
+
+.data_analyze .tool_tab_box {
+	width:950px;
+	border-color: #7995cc;
+    border-style: solid;
+    border-width: 1px 0;
+    clear: both;
+	margin:20px auto;
+}
+
+.data_analyze .tool_tab_box table {
+	width:100%;
+	display: table;
+	margin: 0;
+	border-collapse: collapse;
+	border-width: 0;
+	border-spacing: 0;
+	font:1.2em;
+
+}
+
+.data_analyze .tool_tab_box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    margin:0;
+}
+
+.data_analyze .tool_tab_box table tr {
+	display: table-row;
+    vertical-align: inherit;
+    border-left: 1px solid #7995cc;
+    border-right: 1px solid #7995cc;
+}
+
+.data_analyze .tool_tab_box table th {
+    padding: .3em .5em;
+    text-align: left;
+    border-bottom: 1px solid #cd96cd;
+    font-weight: 400;
+}
+
+.data_analyze .tool_tab_box table th:first-child {
+    border-right: 1px solid #cd96cd;
+}
+.data_analyze .tool_tab_box table th {
+	color:#000;
+	background:#dedede;
+    background: -moz-linear-gradient(top,#e0ffff 0,#dedede 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#e0ffff),color-stop(100%,#dedede));
+}
+
+.tool_tab_box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.tool_tab_box td {
+    border: 0;
+    padding: .3em .5em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tool_tab_box tbody tr:hover{
+    background: #dedede;
+}
+
+.tool_tab_box td a {
+    color: #336699;
+}
+
+.tool_tab_box td a:hover {
+    color: #14376c;
+}

@@ -1,0 +1,13 @@
+﻿/*下拉样式*/
+.dropmenu ul li{position:relative; z-index: 999;}
+.dropmenu ul li ul {display: none; width:150%; background: #0000ff;border: 1px solid #0000ff; border-radius: 2px; } /*一级样式*/
+.dropmenu ul li ul li {display: block; width: 100%; height: inherit; }
+.dropmenu ul li ul li ul{display:none;}/*二级样式*/
+.dropmenu ul li ul li ul li ul{display:none;}/*三级样式*/
+
+.dropmenu ul li:hover ul {display: block; position: absolute; left: 0;}
+.dropmenu ul li:hover ul li ul{display:none;}
+.dropmenu ul li ul li:hover ul{display:block;}
+.dropmenu ul li ul li:hover ul li ul{display:none}
+.dropmenu ul li ul li ul li:hover ul{display:block;}
+

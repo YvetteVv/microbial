@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*首页数据*/
+.container_inner .left_side{width:200px;height:420px;float:left;margin: 15px 0px 0px 20px;}
+.left_side .tit{width:200px;background: #7995cc;text-align:center;overflow:hidden;}
+.left_side .tit span{font-size:15px;color: #fff;}
+.left_side table{display:table;border-collapse:separate;width:200px;padding:0 20px;border-spacing:0;margin-bottom:10px;border: 1px solid #9eb1d7;}
+.left_side a:hover{color: #bf3eff;}
+.left_side tbody{display:table-row-group;vertical-align:middle;}
+.left_side tr{display:table-row;vertical-align:inherit;line-height:30px;font-size:12px;}
+.left_side tr span, .left_side tr a{padding:0px 10px;}
+
+/*首页内容*/
+.container_inner .middle_content{width:750px;height:700px;float:left;margin: 10px 0px 0px 30px;}
+.middle_content .top_module{display:block;width:99%;margin-left:12px 5px 0 5px;}
+.middle_content h1{margin:0px 10px 10px 10px;text-align:left;font-size:1.6em;font-weight:bold;}
+.middle_content p{font-size:1.2em;text-align:left;margin:10px 10px;}
+.middle_content .action_box{display:block;margin:20px 5px;}
+.action_box .comm_box{width:31%;float:left;height:18em;margin:20px 6px;border:1px #9eb1d7 solid;text-align:center;overflow:hidden;box-sizing:border-box;padding:0 0 5em 0;}
+.action_box .comm_box h2{width:100%;padding:2px 0;margin-bottom:10px;background-color:#7995cc;color: #fff;text-align:center;}
+.middle_content a:hover{color: #bf3eff;}
+.action_box .comm_box img{padding:5px 0;margin:10px 0 10px 0;}
+.action_box .comm_box p{padding:2px;text-align:center;height:3.5em;margin:10px 0;}
+.action_box a:hover > .comm_box{border-color:#bf3eff;}
+.action_box a:hover > .comm_box h2{background-color:#bf3eff;}
+/*工具中心*/
+.container_inner .right_side{width:210px;height:600px;float:right;margin:15px 15px 0px 0px;}
+.right_side .comm_side_box{margin-bottom:20px;}
+.right_side .tit{clear:both;width:96%;text-align:left;clear:both;float:left;margin-right: 10px;border-bottom:2px #7995cc solid;overflow:hidden;padding-left:8px;margin:0px 10px 10px 0px;overflow:hidden;}
+.right_side .tit span{float:left;font-size:15px;font-weight:bold;font-family:"Microsoft YaHei";}
+.right_side .some_news .more span{float:right;text-align:right;padding:10px 10px 0 2px;border-bottom:1px #56abc4 solid;}
+.right_side a:hover{color: #bf3eff;}
+.right_side .some_news a:hover > span{border-color:#bf3eff;}
+
+

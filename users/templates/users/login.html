@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}用户登录{% endblock %}
+
+{% block extra_css %}
+<link href="/static/css/user.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="form-wrapper">
+	<form method="post" role="form" action=".">
+		{% if form.errors %}
+			{% include "users/partials/errors.html" %}
+		{% endif %}
+		{% csrf_token %}
+		{% for field in form %}
+			{% include "users/partials/field.html" %}
+		{% endfor %}
+		<div class="button-wrapper submit">
+			<input type="submit" value="{% trans '登 录' %}" />
+		</div>
+		<input type="hidden" name="next" value="{{ next }}" />
+		<div class="f-pwd">
+			<a href="{% url 'users_password_reset' %}">{% trans "忘记密码" %}</a><!--Forgot password-->
+		</div>
+		<div class="f-pwd">
+			还没有账户？<a href="{% url 'users_register' %}">{% trans "马上注册" %}</a><!--Register-->
+		</div>
+	</form>
+</div>
+{% endblock %}

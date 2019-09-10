@@ -1,0 +1,24 @@
+.personal_data {
+    //width: 80%;
+    min-height: 500px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 15px;
+}
+
+.personal_data h2 {
+    text-align: left;
+    margin: 10px;
+}
+
+.personal_data .left_sidebar{font-size:12px;margin:10px 10px 0px 0px;}
+
+.personal_data .sidebar_head{width: 182px;background: #7995cc;color: #fff;text-align: center;vertical-align: middle;font-size: bold;height: 16px;padding: 5px 0px;}
+.personal_data .sidebar_box{width: 160px;border: 1px solid #9eb1d7;padding: 6px 10px;}
+.personal_data .sidebar_text{font-size: 10px;}
+.sidebar_box table{display:table;border-collapse:separate;border-spacing:0;width: 160px;}
+.sidebar_box tbody{display:table-row-group;vertical-align:middle;}
+.sidebar_box tr{display:table-row;vertical-align:inherit;}
+.sidebar_box tr span{padding: 0px 5px;}
+.right_content h3{color: #7995cc;font-size: 1.4em;font-variant: small-caps;text-align: left;margin-top: 0px;margin-bottom: 0px;}

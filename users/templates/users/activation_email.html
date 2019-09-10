@@ -1,0 +1,9 @@
+{% load i18n %}
+{% trans "感谢您注册" %} {{ site.name }}
+{% trans "请访问以下页面来激活您的账户：" %}
+
+{{ protocol }}://{{ site.domain }}{% url 'users_activate' uid token %}
+
+{% blocktrans %}该链接{{ expiration_days }}三天内有效。{% endblocktrans %}
+
+{% trans "如果你没有注册该账户，你可以删除该邮件，我们不会再次打扰您。" %}

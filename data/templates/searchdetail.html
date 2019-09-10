@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}详细信息{% endblock %}
+
+{% block extra_css %}
+<link href="/static/css/analyze.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block current3 %}menu_current{% endblock %}
+
+{% block content %}
+    <div class="data_analyze">
+        <div class="tabs">
+            <input checked id="tab_menu1" name="tabs" type="radio">
+            <label for="tab_menu1"> 所有工具 </label>
+            <input id="tab_menu2" name="tabs" type="radio">
+            <label for="tab_menu2"> 基因组 </label>
+            <input id="tab_menu3" name="tabs" type="radio">
+            <label for="tab_menu3"> 基因 </label>
+            <input id="tab_menu4" name="tabs" type="radio">
+            <label for="tab_menu4"> 蛋白质 </label>
+            <input id="tab_menu5" name="tabs" type="radio">
+            <label for="tab_menu5"> 代谢产物 </label>
+            <script type="text/javascript">
+            $(function() {
+                $('#table_filter').keyup(function() {
+                    $('table tbody tr').hide()
+                        .filter(":contains('" + ($(this).val()) + "')").show();
+                }).keyup(); //DOM加载完时，绑定事件完成之后立即触发
+            });
+            </script>
+            <div class="tab_contents">
+                <div class="tab_content">
+                </div>
+                <div class="tab_content">
+                    <div class="tab_box_filter">
+                        <input type="text" name="table_filter" id="table_filter" placeholder=" 快速选择" />
+                    </div>
+                    <div class="tool_tab_box">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>工具</th>
+                                    <th>功能</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="">1000 Genomes Browser</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Assembly Archive</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Basic Local Alignment Search Tool (BLAST)</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">BLAST Microbial Genomes</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Electronic PCR (e-PCR)</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Genome BLAST</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Genome ProtMap</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Genome Remapping Service</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Genome Workbench</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">OSIRIS</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">ProSplign</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">SNP Database Specialized Search Tool</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Splign</a></td>
+                                    <td>工具</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">Variation Reporter</a></td>
+                                    <td>工具</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab_content">
+                </div>
+                <div class="tab_content">
+                </div>
+                <div class="tab_content">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

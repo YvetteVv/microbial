@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}用户注册{% endblock %}
+
+{% block extra_css %}
+<link href="/static/css/user.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="text_intro">
+</div>
+<div class="form-wrapper">
+	<form method="post" action=".">
+		{% if form.errors %}
+			{% include "users/partials/errors.html" %}
+		{% endif %}
+		{% csrf_token %}
+		{% for field in form %}
+			{% include "users/partials/field.html" %}
+		{% endfor %}
+		<div class="button-wrapper submit">
+			<input type="submit" value="{% trans '注 册' %}" /><!--Register-->
+		</div>
+		<div class="f-pwd">
+            已有账号？<a href="{% url 'users_login' %}">{% trans "马上登录" %}</a>
+        </div>
+	</form>
+</div>
+{% endblock %}

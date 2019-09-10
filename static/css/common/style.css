@@ -1,0 +1,60 @@
+@import url(dropmenu.css);
+@import url(tabmenu.css);
+
+/*basic*/
+html {-webkit-text-size-adjust: none; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, th, td, p, blockquote, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0; padding: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+audio, canvas, video {display: inline-block; *display: inline; *zoom: 1; }
+body {position: relative; font-family: 'Microsoft Yahei', arial, sans-serif; font-size: 1em; font-weight: normal; font-style: normal; cursor: auto; text-align: center; word-wrap: break-word; color: #5a5a5a; background-color: #fafafa; }
+input, select, textarea, button {font-size: 100%; }
+table {border-spacing: 0; border-collapse: collapse; }
+img {border: 0; }
+li {list-style: none; *margin-left: -1px; }
+.left {float: left; }
+.right {float: right; }
+.clear {font-size: 0; line-height: 0; display: block; clear: both; overflow: hidden; width: 0; height: 0; margin: 0; padding: 0; }
+a {text-align: center; text-decoration: none; color: #fff; }
+a:hover {text-decoration: none; color: #9d9d9d; }
+
+/*header*/
+.mirco_header {position: relative; width: 100%; height: 80px; background: #005db5; }
+.header_content {width: 80%; min-width: 1000px; height: 40px; margin: 0 auto; padding: 20px 0; }
+.header_content a {display: block; font-size: 1em; line-height: 40px; height: inherit;text-align: center; }
+
+/*logo*/
+.mirco_logo {width: 25%; min-width: 250px; height: inherit; }
+.mirco_logo img {height: inherit; margin: 0 auto; }
+
+/*micro_nav*/
+.mirco_nav {width: 30%; min-width: 300px; height: inherit; padding-left: 30%; }
+.mirco_nav > ul > li {display: block; float: left; position: relative; width: 25%; }
+.mirco_nav li:hover, .mirco_nav .menu_current {border-bottom: 2px solid #fff; }
+
+/*user_entry*/
+.user_entry { width: 10%; min-width: 120px; height: inherit; }
+.user_entry > ul > li {display: block; float: right; position: relative; width: 45%; min-width: 45px;}
+.user_entry ul li ul:before {content: ""; position: absolute; top: 10px; left: 5px; }
+.user_entry ul li ul:before {font-size: 0;line-height: 0;border-width: 10px;border-top-width: 0;border-style: dashed;border-bottom-style: solid;border-left-color: transparent;border-right-color: transparent;}
+
+/*main*/
+.container {position: relative; width: 100%; min-height: 50vh; background: #fafafa;}
+.main_content {width: 80%; min-width: 1000px; margin: 40px auto; }
+
+.micro_title {width: 100%; margin-bottom: 2.25em; padding: .5em 0; color: #fff; border-width: 1px; border-style: solid; border-color: #d8d8d8; border-radius: 6px; background: #c5c5c5; }
+
+/*footer*/
+.micro_footer {position: relative; width: 100%; border-top: 2px solid #005db5; background: #3b3f41; }
+.micro_footer a {color: #959696; }
+.micro_footer a:hover {color: #fff;}
+.footer_content {clear: both; width: 100%; height: 180px; margin: 0 auto; padding: 30px 0 20px 0; border-bottom: 1px solid #1c1e1f; }
+.content_inner {width: 80%; margin: 0 auto; }
+
+.footer_text { color: #959696; padding: 0 40px; height: 180px;}
+.footer_left {border-right: 1px solid #4e5051; text-align: right; }
+.footer_right {border-left: 1px solid #4e5051; text-align: left; }
+.footer_text dl {line-height: 30px }
+.footer_text dt {font-weight: bold; }
+.footer_coright {clear: both; width: 100%; height: 50px; margin: 0 auto; line-height: 50px; border-top: 1px solid #565b5e; }
+.footer_coright p {font-size: .9em; color: #959696; }
+.footer_coright span {padding: 0 40px;}

@@ -1,0 +1,44 @@
+/* 向上的箭头 */
+.dot-top {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-top-width: 0;
+    border-style: dashed;
+    border-bottom-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+/* 向右的箭头 */
+.dot-right {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-right-width: 0;
+    border-style: dashed;
+    border-left-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+/* 向下的箭头 */
+.dot-bottom {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-bottom-width: 0;
+    border-style: dashed;
+    border-top-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+/* 向左的箭头 */
+.dot-left {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-left-width: 0;
+    border-style: dashed;
+    border-right-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
